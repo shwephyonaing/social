@@ -1,0 +1,164 @@
+social-media-app/
+├── prisma/
+│   ├── schema.prisma
+│   └── seed.ts
+│
+├── public/
+│   ├── images/
+│   ├── icons/
+│   └── avatars/
+│
+├── src/
+│   ├── app/
+│   │   ├── (auth)/
+│   │   │   ├── login/
+│   │   │   │   └── page.tsx
+│   │   │   ├── register/
+│   │   │   │   └── page.tsx
+│   │   │   └── layout.tsx
+│   │   │
+│   │   ├── (main)/
+│   │   │   ├── home/
+│   │   │   │   └── page.tsx
+│   │   │   ├── profile/
+│   │   │   │   └── [username]/
+│   │   │   │       └── page.tsx
+│   │   │   ├── post/
+│   │   │   │   └── [id]/
+│   │   │   │       └── page.tsx
+│   │   │   ├── messages/
+│   │   │   │   └── page.tsx
+│   │   │   ├── notifications/
+│   │   │   │   └── page.tsx
+│   │   │   ├── bookmarks/
+│   │   │   │   └── page.tsx
+│   │   │   ├── settings/
+│   │   │   │   └── page.tsx
+│   │   │   └── layout.tsx
+│   │   │
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   │   ├── login/route.ts
+│   │   │   │   ├── register/route.ts
+│   │   │   │   └── logout/route.ts
+│   │   │   ├── posts/
+│   │   │   │   ├── route.ts
+│   │   │   │   └── [id]/route.ts
+│   │   │   ├── users/
+│   │   │   │   ├── route.ts
+│   │   │   │   └── [id]/route.ts
+│   │   │   ├── comments/
+│   │   │   │   └── route.ts
+│   │   │   ├── likes/
+│   │   │   │   └── route.ts
+│   │   │   ├── follow/
+│   │   │   │   └── route.ts
+│   │   │   ├── upload/
+│   │   │   │   └── route.ts
+│   │   │   └── notifications/
+│   │   │       └── route.ts
+│   │   │
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── button.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── modal.tsx
+│   │   │   └── spinner.tsx
+│   │   │
+│   │   ├── layout/
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── Sidebar.tsx
+│   │   │   ├── Rightbar.tsx
+│   │   │   └── MobileNav.tsx
+│   │   │
+│   │   ├── post/
+│   │   │   ├── PostCard.tsx
+│   │   │   ├── PostList.tsx
+│   │   │   ├── CreatePost.tsx
+│   │   │   ├── PostActions.tsx
+│   │   │   └── CommentList.tsx
+│   │   │
+│   │   ├── profile/
+│   │   │   ├── ProfileHeader.tsx
+│   │   │   ├── ProfileTabs.tsx
+│   │   │   └── FollowButton.tsx
+│   │   │
+│   │   ├── message/
+│   │   │   ├── ChatList.tsx
+│   │   │   ├── ChatWindow.tsx
+│   │   │   └── MessageInput.tsx
+│   │   │
+│   │   └── common/
+│   │       ├── Avatar.tsx
+│   │       ├── Logo.tsx
+│   │       ├── SearchBar.tsx
+│   │       └── EmptyState.tsx
+│   │
+│   ├── features/
+│   │   ├── auth/
+│   │   │   ├── auth.service.ts
+│   │   │   ├── auth.validation.ts
+│   │   │   └── auth.types.ts
+│   │   │
+│   │   ├── posts/
+│   │   │   ├── post.service.ts
+│   │   │   ├── post.validation.ts
+│   │   │   └── post.types.ts
+│   │   │
+│   │   ├── users/
+│   │   │   ├── user.service.ts
+│   │   │   └── user.types.ts
+│   │   │
+│   │   ├── comments/
+│   │   ├── likes/
+│   │   ├── follows/
+│   │   └── notifications/
+│   │
+│   ├── lib/
+│   │   ├── prisma.ts
+│   │   ├── auth.ts
+│   │   ├── upload.ts
+│   │   ├── utils.ts
+│   │   ├── constants.ts
+│   │   └── db.ts
+│   │
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   │   ├── usePosts.ts
+│   │   ├── useProfile.ts
+│   │   └── useDebounce.ts
+│   │
+│   ├── store/
+│   │   ├── authStore.ts
+│   │   ├── postStore.ts
+│   │   └── uiStore.ts
+│   │
+│   ├── types/
+│   │   ├── auth.ts
+│   │   ├── post.ts
+│   │   ├── user.ts
+│   │   └── index.ts
+│   │
+│   ├── actions/
+│   │   ├── auth.actions.ts
+│   │   ├── post.actions.ts
+│   │   └── user.actions.ts
+│   │
+│   ├── providers/
+│   │   ├── QueryProvider.tsx
+│   │   └── SessionProvider.tsx
+│   │
+│   ├── middleware.ts
+│   └── env.ts
+│
+├── .env
+├── .env.local
+├── .gitignore
+├── next.config.ts
+├── package.json
+├── tsconfig.json
+└── README.md
