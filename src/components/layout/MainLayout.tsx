@@ -20,7 +20,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         </div>
         <main
           className={cn(
-            "min-w-0 flex-1 pt-4",
+            "min-w-0 flex-1",
             isProfileRoute
               ? "overflow-hidden"
               : "overflow-y-auto pr-1 scrollbar-hide",
